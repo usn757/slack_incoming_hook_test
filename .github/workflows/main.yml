@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-java@v4 # v4 버전 사용 권장
         with:
           java-version: '17'
-          distribution: ' Temurin'
+          distribution: 'Temurin'
       - name: 실행 가능한 JAR 파일 빌드 (Maven 예시)
         run: mvn clean install # Maven 빌드 명령 (Gradle 사용하는 경우 gradlew build)
       - name: 자바 프로그램 실행 및 Slack 메시지 전송
