@@ -2,7 +2,7 @@ name: Slack Message Scheduler (Java)
 
 on:
   schedule:
-    - cron: "0 * * * *" # 매시 0분마다 실행
+    - cron: "0 0 * * 0" # 매주 일요일 자정에 실행 (UTC 기준)
   workflow_dispatch: # 수동 실행 가능
 
 jobs:
